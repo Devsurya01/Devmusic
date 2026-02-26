@@ -1,0 +1,283 @@
+[
+  {
+    "id": 1,
+    "title": "Chiru Chiru Chiru",
+    "artist": "Yuvan Shankar Raja",
+    "file": "../songs/Chiru Chiru Chiru.mp3",
+    "image": "assets/icons/awara.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Mandaara Poovelle",
+    "artist": "Benny Dayal",
+    "file": "../songs/Mandaara Poovalle.mp3",
+    "image": "assets/icons/awara.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Chakori",
+    "artist": "Satyaprakash, Sashaa Thirupati",
+    "file": "../songs/Chakori.mp3",
+    "image": "assets/icons/SSS.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Mobsta",
+    "artist": "Coolie",
+    "file": "../songs/Mobsta.mp4",
+    "image": "assets/icons/coolie.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Run it Up",
+    "artist": "HanumanKind",
+    "file": "../songs/Run it Up.mp3",
+    "image":"assets/icons/HanumanKind.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Monica-Hindi",
+    "artist": "Anirudh Ravichander, Sublahshini, Kumaar",
+    "file": "../songs/Monica-Hindi.mp3",
+    "image": "assets/icons/Coolieitem.jpg"
+  },
+  {
+    "id": 7,
+    "title": "23 Theme",
+    "artist": "Anirudh Ravichander, Heisenberg",
+    "file": "../songs/23 Theme.mp3",
+    "image" : "assets/icons/23 theme.jpg"
+  },
+  {
+    "id": 8,
+    "title": "O Sukumari",
+    "artist": "Nakul, G.V.Prakash, Tippu",
+    "file": "../songs/O Sukumari.mp3",
+    "image":"assets/icons/aparichitudu.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Premante",
+    "artist": "Devan, Kalapana,Samantha Fernander",
+    "file": "../songs/Premante.mp3",
+    "image" : "assets/icons/kushi.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Darsanamey",
+    "artist": "Vishal Chandrashekhar",
+    "file": "../songs/Darsanamey.mp3",
+    "image": "assets/icons/NNNM.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Rise of Shyam",
+    "artist": "Vishal Dadlani,Anurag Kulkarni, Cizzy",
+    "file": "../songs/Rise of Shyam.mp3",
+    "image": "assets/icons/SSR.jpg"  
+  },
+  {
+    "id": 12,
+    "title": "Sirivennala",
+    "artist": "Anurag Kulkarni",
+    "file": "../songs/Sirivennala.mp3",
+    "image": "assets/icons/SSR.jpg"
+  },
+     {
+    "id": 13,
+    "title": "Pranavalaya",
+    "artist": "Anurag Kulkarni",
+    "file": "../songs/Pranavalaya.mp3",
+    "image": "assets/icons/SSR.jpg"
+  },
+   {
+    "id": 14,
+    "title": "Adharaku",
+    "artist": "Viswa",
+    "file": "../songs/Adharaku.mp3",
+    "image": "assets/icons/Athadu.jpg"
+  },
+    {
+      "id": 15,
+      "title": "Pillagali",
+      "artist": "Shreya Ghoshal",
+      "file": "../songs/Pillagali.mp3",
+      "image": "assets/icons/athadu.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Avunu Nizam",
+      "artist": "K.K Sunitha",
+      "file": "../songs/Avunu Nizam.mp3",
+      "image": "assets/icons/athadu.jpg"
+    },
+   {
+        "id": 17,
+        "title": "Chandamama",
+        "artist": " Ranjith, Mahalakshmi",
+        "file": "../songs/Chandamama.mp3",
+        "image": "assets/icons/athadu.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Neetho Cheppana",
+        "artist": "S.P.Balu, Chitra",
+        "file": "../songs/Neetho Cheppana.mp3",
+        "image": "assets/icons/athadu.jpg"
+      },
+        {
+          "id": 19,
+          "title": "Pilichina",
+          "artist": "Karthik, Kavitha Subramanyam",
+          "file": "../songs/Pilichina.mp3",
+          "image": "assets/icons/athadu.jpg"
+        },
+        {
+          "id": 20,
+          "title": "Sada Siva",
+          "artist": "Ramesh Vinayagam, Karunya",
+          "file": "../songs/Sada Siva.mp3",
+          "image": "assets/icons/Khaleja.jpg"
+        },
+          {
+            "id": 21,
+            "title": "Pilieche",
+            "artist": " Hemachandra, Swetha",
+            "file": "../songs/Pilieche.mp3",
+            "image": "assets/icons/Khaleja.jpg"
+          },
+          {
+            "id": 22,
+            "title": "Gira Gira Gingiraagirey",
+            "artist": "Ram Miriyala",
+            "file": "../songs/Gira Gira Gingiraagirey.mp3",
+            "image": "assets/icons/champion.jpg"
+          },
+          {
+            "id": 23,
+            "title": "Ela Ela",
+            "artist": "Haricharan, Shweta Pandit",
+            "file": "../songs/Ela Ela.mp3",
+            "image": "assets/icons/panja.jpg"  
+ },
+          {
+              "id": 24,
+              "title": "Monica Telugu",
+              "artist": "Karthik, Shreya Ghoshal",
+              "file": "../songs/Monica-telugu.mp3",
+              "image": "assets/icons/Coolieitem.jpg"
+            },
+{
+  "id": 25,
+  "title": "We don't talk Anymore",
+  "artist": "Charle Puth feat. Selena Gomez",
+  "file": "../songs/We don't talk Anymore.mp3",
+  "image": "assets/icons/WDTA.jpg"
+},
+{
+  "id": 26,
+  "title": "chikiri chikiri",
+  "artist": "Mohit Chauhan",
+  "file": "../songs/chikiri chikiri.mp3",
+  "image":"assets/icons/peddi.jpg"
+},
+{
+  "id": 27,
+  "title": "Blinding Lights",
+  "artist": "The Weeknd",
+  "file": "../songs/Blinding Lights.mp3",
+  "image": "assets/icons/BL.jpg"
+},
+{
+  "id": 28,
+  "title": "Levitating",
+  "artist": "Dua Lipa feat. DaBaby",
+  "file": "../songs/Levitating.mp3",
+  "image": "assets/icons/Levitating.jpg"
+
+},
+{
+  "id": 29,
+  "title": "Peaches",
+  "artist": "Justin Bieber feat. Daniel Caesar, Giveon",
+  "file": "../songs/Peaches.mp3",
+  "image": "assets/icons/Peaches.jpg"
+},
+{
+  "id": 30,
+  "title": "Save Your Tears",
+  "artist": "The Weeknd",
+  "file": "../songs/Save Your Tears.mp3",
+  "image": "assets/icons/SYT.jpg"
+},
+{
+  "id": 31,
+  "title": "Espresso",
+  "artist": "Sabrina Carpenter",
+  "file": "../songs/Espresso.mp3",
+  "image": "assets/icons/Espresso.jpg"
+},
+{
+  "id": 32,
+  "title": "oka maru",
+  "artist": "Karthik",
+  "file": "../songs/Oka Maru.mp3",
+  "image": "assets/icons/ghajini.jpg"
+},
+{
+  "id": 33,
+  "title": "Mannela thintivi Ra",
+  "artist": "Tippu, Smitha, Kalyani",
+  "file": "../songs/Mannela thintivi Ra.mp3",
+  "image": "assets/icons/chatrapathi.jpg"
+},
+{
+  "id": 34,
+  "title": "Singari",
+  "artist": "Sai Abhyankkar",
+  "file": "../songs/Singari.mp3",
+  "image": "assets/icons/Dude.jpg"
+},
+{
+  "id": 35,
+  "title": "Chal Chal Re",
+  "artist": "Clinton",
+  "file": "../songs/Chal Chal Re.mp3",
+  "image": "assets/icons/happy.jpg"
+},
+{
+  "id": 36,
+  "title": "Happy",
+  "artist": "Karthik",
+  "file": "../songs/Happy.mp3",
+  "image": "assets/icons/happy.jpg"
+},
+{
+  "id": 37,
+  "title": "Ossa",
+  "artist": "Jessi Gift, Suchitra",
+  "file": "../songs/Ossa.mp3",
+  "image": "assets/icons/happy.jpg"
+},
+{
+  "id": 38,
+  "title": "Paro",
+  "artist": "Aditya Rikhari",
+  "file": "../songs/Paro.mp3",
+  "image": "assets/icons/paro.jpg"
+},
+{
+  "id": 39,
+  "title": "Sahiba",
+  "artist": "Aditya Rikhari",
+  "file": "../songs/Sahiba.mp3",
+  "image": "assets/icons/Sahiba.jpg"
+},
+{
+  "id": 40,
+  "title": "Young Yama",
+  "artist": "Shankar Mahadevan, Mano & Keeravani",
+  "file": "../songs/Young Yama.mp3",
+  "image": "assets/icons/Yamadonga.jpg"
+}
+]
