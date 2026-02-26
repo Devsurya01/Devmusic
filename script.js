@@ -210,7 +210,7 @@ function playSong(song) {
 
     updatePlayerCard(song);
 }
-fetch("https://devmusic-a4hy.onrender.com")
+fetch("https://devmusic-a4hy.onrender.com/songs")
   .then(res => res.json())
   .then(data => {
     songs = data;
@@ -223,7 +223,7 @@ async function displaySongs(songArray) {
     // 1. Fetch current library state to mark already liked songs
     let likedIds = [];
     try {
-        const response = await fetch("http://localhost:5000/liked");
+        const response = await fetch("http://devmusic-a4hy.onrender.com/liked");
         const likedSongs = await response.json();
         likedIds = likedSongs.map(s => s.id);
     } catch (err) {
@@ -304,7 +304,7 @@ const checkAuth = () => {
 const handleAuth = async (e, type) => {
   e.preventDefault();
   showLoader();
-  fetch("https://devmusic-a4hy.onrender.com")
+  fetch("https://devmusic-a4hy.onrender.com/songs")
   .then(res => res.json())
   .then(data => {
     songs = data;
@@ -318,7 +318,7 @@ const handleAuth = async (e, type) => {
     : { email: inputs[0].value, password: inputs[1].value };
 
   try {
-    const response = await fetch(`http://localhost:5000/${type}`, {
+    const response = await fetch(`http://devmusic-a4hy.onrender.com/${type}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)
@@ -507,7 +507,7 @@ navLibrary.onclick = () => {
 // --- Updated Library Management ---
 // --- Updated Library Management with Automatic Home Sync ---
 function loadLibrary() {
-  fetch("http://localhost:5000/liked")
+  fetch("http://devmusic-a4hy.onrender.com/liked")
     .then(res => res.json())
     .then(data => {
       const list = document.getElementById('likedSongList');
@@ -546,7 +546,7 @@ div.querySelector('.remove-btn').onclick = async (e) => {
 async function toggleLikeStatus(song, shouldAdd) {
   const endpoint = shouldAdd ? "like" : "unlike"; 
   try {
-    const response = await fetch(`http://localhost:5000/${endpoint}`, {
+    const response = await fetch(`http://devmusic-a4hy.onrender.com/${endpoint}`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(song)
@@ -681,3 +681,4 @@ function playProfileSound() {
   osc.stop(audioContext.currentTime + 0.3);
 
 }
+
