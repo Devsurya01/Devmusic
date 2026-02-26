@@ -210,7 +210,7 @@ function playSong(song) {
 
     updatePlayerCard(song);
 }
-fetch("http://localhost:5000/songs")
+fetch("https://devmusic-a4hy.onrender.com")
   .then(res => res.json())
   .then(data => {
     songs = data;
@@ -304,7 +304,7 @@ const checkAuth = () => {
 const handleAuth = async (e, type) => {
   e.preventDefault();
   showLoader();
-  fetch("http://localhost:5000/songs")
+  fetch("https://devmusic-a4hy.onrender.com")
   .then(res => res.json())
   .then(data => {
     songs = data;
@@ -679,4 +679,5 @@ function playProfileSound() {
   gain.connect(audioContext.destination);
   osc.start();
   osc.stop(audioContext.currentTime + 0.3);
+
 }
