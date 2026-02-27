@@ -1437,4 +1437,58 @@ header {
   /* Slight scale up makes it feel active */
   transform: scale(1.02); 
   transition: all 0.3s ease;
+
+}
+/* --- Mobile Responsive Layout --- */
+@media (max-width: 768px) {
+  /* Stack layout vertically and reverse to put nav at bottom */
+  .app-layout {
+    flex-direction: column-reverse; 
+    height: 100vh;
+  }
+
+  /* Transform sidebar into a bottom navigation bar */
+  .sidebar {
+    width: 100% !important;
+    height: 70px !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    flex-direction: row !important;
+    justify-content: space-around;
+    padding: 0 !important;
+    border-right: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.9) !important;
+  }
+
+  /* Hide desktop-only elements */
+  .sidebar .desktop-only { display: none; }
+
+  /* Ensure content doesn't get hidden behind bottom nav */
+  .main-content {
+    padding: 10px;
+    padding-bottom: 180px; 
+    overflow-x: hidden;
+  }
+
+  /* Adjust Search Bar width */
+  #search {
+    max-width: 100%;
+    font-size: 14px;
+  }
+
+  /* Adjust Player Card for mobile */
+  .player-card {
+    bottom: 80px; /* Float above bottom nav */
+    width: 95%;
+    padding: 10px;
+  }
+
+  /* Resize Album Art in player */
+  .player-album-art {
+    width: 50px;
+    height: 50px;
+  }
 }
