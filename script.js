@@ -99,7 +99,7 @@ function createRandomSymbols() {
     img.src = imageSources[Math.floor(Math.random() * imageSources.length)];
     
     // Random positioning
-    img.style.left = Math.random() * 100 + "%";
+    img.style.left = Math.random() * 95 + "%";
     img.style.top = Math.random() * 100 + "%";
     
     // Random sizing
@@ -681,4 +681,5 @@ function playProfileSound() {
   osc.stop(audioContext.currentTime + 0.3);
 
 }
+
 
