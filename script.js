@@ -69,52 +69,6 @@ function playClickSound() {
   osc2.stop(audioContext.currentTime + 0.5);
 }
 
-// Create random music symbols in background
-// Create random music images in background
-function createRandomSymbols() {
-  // Array of your image filenames
-  const imageSources = [
-    "assets/icons/music (1).png", 
-    "assets/icons/music (2).png",
-    "assets/icons/music (3).png",
-    "assets/icons/music.png",
-    "assets/icons/musical-note.png"
-    // Add more image filenames here as needed
-  ];
-  const neonFilters = [
-    "invert(72%) sepia(95%) saturate(400%) hue-rotate(120deg)", // Cyan
-    "invert(27%) sepia(91%) saturate(2352%) hue-rotate(346deg)", // Red
-    "invert(80%) sepia(50%) saturate(1000%) hue-rotate(280deg)", // Purple
-    "invert(90%) sepia(80%) saturate(500%) hue-rotate(60deg)",  // Yellow
-    "invert(60%) sepia(90%) saturate(3000%) hue-rotate(90deg)"   // Green
-  ];
-  
-  const imageCount = 150; // Reduced count because images take more memory than text
-  
-  for (let i = 0; i < imageCount; i++) {
-    const img = document.createElement("img");
-    img.className = "symbol"; // Keeping the class name for CSS styling
-    
-    // Pick a random image from your list
-    img.src = imageSources[Math.floor(Math.random() * imageSources.length)];
-    
-    // Random positioning
-    img.style.left = Math.random() * 100 + "%";
-    img.style.top = Math.random() * 100 + "%";
-    
-    // Random sizing
-    const size = Math.random() * 30 + 20; // Size between 20px and 50px
-    img.style.width = size + "px";
-    img.style.height = "auto";
-    
-    // Random rotation for variety
-    img.style.transform = `rotate(${Math.random() * 180}deg)`;
-    
-    document.body.appendChild(img);
-  }
-}
-
-
 // Update player card display
 function updatePlayerCard(song) {
   playerTitle.textContent = song.title;
@@ -221,7 +175,7 @@ async function displaySongs(songArray) {
     // 1. Fetch current library state to mark already liked songs
     let likedIds = [];
     try {
-        const response = await fetch("https://devmusic-a4hy.onrender.com/liked");
+        const response = await fetch("http://https://devmusic-a4hy.onrender.com/liked");
         const likedSongs = await response.json();
         likedIds = likedSongs.map(s => s.id);
     } catch (err) {
@@ -678,4 +632,3 @@ function playProfileSound() {
   osc.start();
   osc.stop(audioContext.currentTime + 0.3);
 }
-
