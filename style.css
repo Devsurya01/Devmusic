@@ -1,13 +1,47 @@
-/* --- Modern Glassmorphism Core --- */
+/* --- Responsive Glassmorphism Background --- */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  /* Deep Cyberpunk Mesh Gradient */
-  background: radial-gradient(circle at 20% 30%, #1a1a2e 0%, #0f0f1a 100%);
-  color: #e0e0e0;
-  overflow-x: hidden;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+  
+  /* Set your uploaded image as the background */
+  background-image: url('assets/icons/musicbackground.jpg');
+  
+  /* 1. Scales image to fill screen without stretching on any device */
+  background-size: cover; 
+  background-position: center;
+  
+  /* 2. Keeps background fixed like a professional music app */
+  background-attachment: fixed; 
+  
+  /* 3. Dark fallback color */
+  background-color: #0c0e12; 
+  
+  position: relative;
 }
 
+/* --- Frosted Overlay for Readability --- */
+/* This ensures your neon text and song cards are easy to read */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* Darken the background slightly */
+  background: rgba(12, 14, 18, 0.1); 
+  
+  /* Apply the frosted glass blur */
+  backdrop-filter: none;  
+  -webkit-backdrop-filter: none;
+  
+  z-index: -1; /* Stays behind all interactive content */
+}
 /* Replace floating symbols with a few slow-moving blurred orbs */
 .bg-orb {
   position: fixed;
@@ -30,10 +64,9 @@ body {
 
 /* Frosted Glass Container */
 .main-content, .sidebar, .player-card {
-  background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(25px) saturate(150%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none !important;
 }
 
 /* Vibrant Neon Buttons */
@@ -891,7 +924,7 @@ header {
 .app-layout {
   display: flex;
   height: 100vh;
-  background: #000;
+  background: transparent; /* Background is handled by body */
 }
 
 .sidebar {
@@ -1437,58 +1470,4 @@ header {
   /* Slight scale up makes it feel active */
   transform: scale(1.02); 
   transition: all 0.3s ease;
-
-}
-/* --- Mobile Responsive Layout --- */
-@media (max-width: 768px) {
-  /* Stack layout vertically and reverse to put nav at bottom */
-  .app-layout {
-    flex-direction: column-reverse; 
-    height: 100vh;
-  }
-
-  /* Transform sidebar into a bottom navigation bar */
-  .sidebar {
-    width: 100% !important;
-    height: 70px !important;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    flex-direction: row !important;
-    justify-content: space-around;
-    padding: 0 !important;
-    border-right: none !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 2000;
-    background: rgba(0, 0, 0, 0.9) !important;
-  }
-
-  /* Hide desktop-only elements */
-  .sidebar .desktop-only { display: none; }
-
-  /* Ensure content doesn't get hidden behind bottom nav */
-  .main-content {
-    padding: 10px;
-    padding-bottom: 180px; 
-    overflow-x: hidden;
-  }
-
-  /* Adjust Search Bar width */
-  #search {
-    max-width: 100%;
-    font-size: 14px;
-  }
-
-  /* Adjust Player Card for mobile */
-  .player-card {
-    bottom: 80px; /* Float above bottom nav */
-    width: 95%;
-    padding: 10px;
-  }
-
-  /* Resize Album Art in player */
-  .player-album-art {
-    width: 50px;
-    height: 50px;
-  }
 }
